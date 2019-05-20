@@ -9,4 +9,16 @@ Steps:
         django-admin startproject <your project name>
   2.  Run your project using command:
         python manage.py runserver (It will your django project on http://127.0.0.1:8000/)
-  3.  Go to your code editor and go to file settings.py search for databases.
+  3.  Do pip install djongo in your django enviroment.
+  4.  Go to your code editor and open file settings.py search for DATABASES in that file write the following code over there
+        DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': '<Your DB Name>',
+    }
+}
+  5.  After that run the command to make migrations
+        python manage.py makemigration
+        and the 
+        python manage.py migrate
+  6.  Go to MongoDB Compass or Studio 3T you will see your database is created and it have other django related folders in it.
