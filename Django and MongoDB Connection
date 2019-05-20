@@ -1,0 +1,12 @@
+Prerequsites:
+  Python 
+  Django (Latest version usually 2.x and above)
+  MongoDB
+  MongoDB Compass or Studio 3T (MongoDB GUI)
+
+Steps:
+  1.  Create Empty Django Project using command: 
+        django-admin startproject <your project name>
+  2.  Run your project using command:
+        python manage.py runserver (It will your django project on http://127.0.0.1:8000/)
+  3.  Go to your code editor and go to file settings.py search for databases.
